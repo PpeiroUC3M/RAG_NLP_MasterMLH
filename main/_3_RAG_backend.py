@@ -148,8 +148,7 @@ def search_and_answer(query: str, num_docs: int = 10, category: str = 'All categ
                 options={
                     "temperature": 0.2,
                     "top_p": 0.85,
-                    "frequency_penalty": 0.8,
-                    "presence_penalty": 0.2
+                    "repeat_penalty": 0.8,
                 }
             )
             response = response['message']['content']
